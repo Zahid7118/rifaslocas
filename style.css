@@ -1,0 +1,186 @@
+.navbar{
+    background-color: transparent;
+   }
+
+.navbar-brand{
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;  
+}
+
+.nav-item a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    /* margin-top: 56px; */
+    background-size: 100% 100%;
+    background-image: url(images/456536.jpg);
+}
+
+.banner h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    font-size: 6rem;
+}
+
+.navbar-toggler{
+    background-size: 100% 100%;
+    background-image: url(images/boton.png);
+}
+/* .navbar-collapse{
+    background-color:black;
+} */
+
+.promo{
+    margin-top: 10px;
+    display: flex;
+    padding: 2% 10%;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 30px;
+    margin: 0 10px;
+    height: 450px;
+}
+
+.card img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 40%;
+}
+
+.card h5{
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+}
+
+.card p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+}
+
+.productos{
+padding: 5% 5%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+
+.carousel {
+    height: 300px;
+    width: 50%;
+   }
+
+.carousel .carousel-inner .carousel-item img{
+    height: 250px;
+    width: 50%;
+}
+.carousel-indicators li{
+    
+    background-color: red;
+}
+
+.productos h1{
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.ganadores{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ganadores h1{
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.experiencias {
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(2,1fr);
+    padding: 5% 15%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+
+.experiencias .foto-experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+
+}
+
+.experiencias .foto-experiencia img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
+@media (max-width:425px){
+
+    .banner h1{
+        font-size: 3rem;
+    }
+    .nav-item a{
+        color: #fff;
+        font-size: 1rem;
+    }
+    .banner{
+        height: 600px;
+    }
+
+    .promo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .promo .card{
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    .carousel {
+        height: 300px;
+        width: 80%;
+       }
+    
+    .carousel .carousel-inner .carousel-item img{
+        height: 250px;
+        width: 80%;
+    }
+
+    .experiencias {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding: 5% ;
+    }
+    
+    }
+
+
+    
+}
