@@ -36,6 +36,7 @@
 .navbar-toggler{
     background-size: 100% 100%;
     background-image: url(images/boton.png);
+    outline: none;
 }
 /* .navbar-collapse{
     background-color:black;
