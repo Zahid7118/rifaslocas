@@ -1,22 +1,35 @@
-.navbar{
-    background-color: white;
-    z-index: 1;
-   }
 
-.navbar-brand{
+.navbar-inverse{
+    background-color: transparent;
+}
+
+.navbar-brand {
     font-family: 'Press Start 2P', cursive;
-    color: black;  
+    color: #fff;  
+    Text-Decoration: none !important;
+}
+.navbar a{
+color: #fff;
 }
 
 .nav-item a{
-    color: black;
+    color: #fff;
     font-size: 1rem;
     font-weight: 700;
+    Text-Decoration: none !important;
 }
 
+.navbar-principal{
+    background-color: white;
+   }
 
-.navbar-brand:hover{
-    color: black;
+.nav-item-inverse a{
+ color: black  ;
+}
+
+.navbar-brand-inverse{
+ color: black !important ;  
+ text-decoration: none !important;
 }
 
 .banner{
@@ -68,14 +81,15 @@
 
 .card .card-body h5{
     font-weight: 800;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Pacifico', cursive;
     font-size: 2rem;
     text-align: center;
 }
 
 .card .card-body p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .productos{
@@ -177,10 +191,53 @@ align-items: center;
    
   }
 
+  footer{
+      background-color:#2A2A2A;
+      height: 200px;
+      display: grid;
+      grid-template: 1fr / repeat(2,1fr);
+      padding: 2% 2%;
+  }
+  footer .logo-footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2%;
+  }
+  footer .logo-footer p{
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;  
+    Text-Decoration: none !important;
+    font-size: 2rem;
+  }
+
+  footer .contacto-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacto-footer img{
+    height: 50%;
+    margin: 5px;
+}
+
+footer .contacto-footer p{
+    color:white;
+    font-size: 1.5rem;
+    margin: 2px;
+}
+
+footer .contacto-footer span{
+    color:#fff;
+    font-size: 1.5rem;
+}
+
+
 @media (max-width:769px){
    
     .card .card-body h5{
-       font-size: 2rem;
+       font-size: 1.5rem;
     }
     .card .card-body p{
         font-size: 1rem;
@@ -257,5 +314,8 @@ align-items: center;
           grid-column-start: 1; 
           grid-column-end: 3;
           grid-row-start: 4; 
+        }
+        footer{
+            grid-template: repeat(2,1fr) / 1fr;
         }
     }
